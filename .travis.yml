@@ -11,6 +11,6 @@ install:
 
 after_success:
   - NOW_URL=$(now deploy --public --name performance-masterclass --token $NOW_TOKEN | egrep -o 'https?://[^ ]+')
-  - node node_modules/lighthouse-ci/runlighthouse.js $NOW_URL
+  - node log.js $NOW_URL
   - now remove -y --token $NOW_TOKEN $NOW_URL
 
