@@ -11,12 +11,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git",
     "ngrok": "2.2.6",
     "nodemon": "1.11.0"
   },
   "dependencies": {
     "body-parser": "1.15.2",
     "express": "4.14.0",
+    "node-fetch": "^2.0.0-alpha.8",
     "nunjucks": "3.0.0"
   }
 }
